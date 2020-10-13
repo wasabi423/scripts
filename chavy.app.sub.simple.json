@@ -1,0 +1,110 @@
+{
+  "id": "chavyleung.app.sub",
+  "name": "chavyleung应用订阅 (示例)",
+  "author": "@chavyleung",
+  "icon": "https://avatars3.githubusercontent.com/u/29748519?s=460&u=392a19e85465abbcb1791c9b8b32184a16e6795e&v=4",
+  "repo": "https://github.com/chavyleung/scripts",
+  "apps": [
+    {
+      "id": "BAIDU (sample)",
+      "name": "百度签到",
+      "desc": "这是一段文字介绍, 你可以使用 \\n 来换行\n嗯, 这是新的一行, \n但是, 你不能在这里写 html 代码, 如: \n<html></html>",
+      "descs": [
+        "这是多段文字介绍, descs 是个数组",
+        "数组每一个元素对独一行",
+        "当然, 你还是可以能过 \\n 来换行的\n嗯，这是新的一行."
+      ],
+      "desc_html": "这是一段 <font class=\"error--text\">HTML</font> 介绍, 你可以使用标准的 HTML 标签, ",
+      "descs_html": [
+        "是的, <font class=\"green--text\">HTML</font> 也有数组, 你可以嵌入一个 iframe, 如: ",
+        "<iframe type=\"text/html\" src=\"https://www.youtube.com/embed/eIpBrRxiy0w?autoplay=1\" frameborder=\"0\"></iframe>",
+        "<br />",
+        "通过一个 &lt;br /&gt; 来空出一行",
+        "<br />",
+        "<h3>来看看一些更优雅的用法</h3>",
+        "<img width=\"100%\" src=\"http://api.btstu.cn/sjbz/?lx=m_meizi\"></img>"
+      ],
+      "keys": ["chavy_cookie_tieba", "CFG_tieba_isOrderBars2"],
+      "settings": [
+        {
+          "id": "CFG_tieba_isOrderBars",
+          "name": "排序方式",
+          "val": "exp",
+          "type": "radios",
+          "desc": "贴吧签到排序方式",
+          "items": [
+            { "key": "false", "label": "按经验排序" },
+            { "key": "true", "label": "按连签排序" }
+          ]
+        },
+        {
+          "id": "CFG_tieba_isOrderBars2",
+          "name": "排序方式",
+          "val": ["exp", "level"],
+          "type": "checkboxes",
+          "desc": "默认按经验排序",
+          "items": [
+            { "key": "exp", "label": "按经验排序" },
+            { "key": "level", "label": "按等级排序" }
+          ]
+        },
+        {
+          "id": "CFG_tieba_maxShowBars",
+          "name": "每页显示数",
+          "val": 15,
+          "type": "number",
+          "desc": "每页最显示多少个吧信息"
+        },
+        {
+          "id": "CFG_tieba_maxSignBars",
+          "name": "每次并发",
+          "val": 5,
+          "type": "number",
+          "desc": "每次并发签到多少个吧"
+        },
+        {
+          "id": "CFG_tieba_signWaitTime",
+          "name": "并发间隔 (毫秒)",
+          "val": 2000,
+          "type": "number",
+          "desc": "每次并发间隔时间"
+        },
+        {
+          "id": "@chavy_boxjs_userCfgs.color_light_primary",
+          "name": "明亮色调",
+          "canvas": true,
+          "val": "#F7BB0E",
+          "type": "colorpicker",
+          "desc": ""
+        },
+        {
+          "id": "@chavy_boxjs_userCfgs.color_dark_primary",
+          "name": "暗黑色调",
+          "canvas": false,
+          "val": "#2196F3",
+          "type": "colorpicker",
+          "desc": ""
+        }
+      ],
+      "author": "@chavyleung",
+      "repo": "https://github.com/chavyleung/scripts/tree/master/tieba",
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.js",
+      "script_timeout": 20,
+      "scripts": [
+        {
+          "name": "百度签到",
+          "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.js",
+          "script_timeout": 20
+        },
+        {
+          "name": "什么值得买",
+          "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.js"
+        }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/Orz-3/mini/master/baidu.png",
+        "https://raw.githubusercontent.com/Orz-3/task/master/baidu.png"
+      ]
+    }
+  ]
+}
