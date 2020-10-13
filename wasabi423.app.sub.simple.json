@@ -11,9 +11,9 @@
     "descs_html": [
       "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js\">脚本注释</a></h4>"
     ],
-    "script": "https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js",
-    "author": "@NobyDa",
-    "repo": "https://github.com/NobyDa/Script/blob/master/52pojie-DailyBonus/52pojie.js",
+    "script": "https://raw.githubusercontent.com/wangdelu2020/hongliyu/master/liantongnotice.js",
+    "author": "@wasabi423",
+    "repo": "https://raw.githubusercontent.com/wangdelu2020/hongliyu/master/liantongnotice.js",
     "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/52pj.png", "https://raw.githubusercontent.com/Orz-3/task/master/52pj.png"]
   }]
 }
